@@ -161,6 +161,12 @@ aside {
     border-bottom: 1px solid #ccc;
 }
 
+.icons::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .icon {
     width: 60px;
     height: 60px;
@@ -247,11 +253,14 @@ footer {
 
 @media screen and (max-width: 980px) {
 
+    main {
+        width: 90%;
+    }
     .main-heading-content {
         width: 90%;
     }
     .content {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -285,7 +294,18 @@ footer {
 
 @media screen and (max-width: 768px) {
     article {
-        background: blue;
+        width: 100%;
+        float: none;
+    }
+
+    .img-box {
+        width: 50%;
+    }
+
+    aside {
+        width: 100%;
+        float: none;
+        text-align: left;
     }
 }
 
