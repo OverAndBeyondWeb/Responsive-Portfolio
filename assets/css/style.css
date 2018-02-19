@@ -71,8 +71,8 @@ nav a {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     text-decoration: none;
     padding: 0 20px;
-    border-right: 1px solid red;
-    border-left: 1px solid red;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
 }
 
 nav a:hover {
@@ -123,18 +123,22 @@ article {
     border-bottom: 2px solid #ccc;
 }
 
-article img {
+.img-box {
+    width: 200px;
+    height: 150px;
     margin-right: 15px;
     vertical-align: top;
+    float: left;
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
 }
 
 article p {
     line-height: 1.5;
     vertical-align: top;
-}
-
-.profile-pic {
-    float: left;
 }
 
 aside {
@@ -241,3 +245,40 @@ footer {
     bottom: 0;
 }
 
+@media screen and (max-width: 980px) {
+
+    .main-heading-content {
+        width: 90%;
+    }
+    .content {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    article {
+        width: 55%;
+    }
+
+    .aside {
+        width: 42%;
+    }
+    .img-box {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .profile-pic {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    article {
+        background: blue;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    
+}
