@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    color: #777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background: url("../images/old_map.png") blue;
+    padding: none;
+    margin: none;
+    min-height: 100%;
+    position: relative;
+}
+
+main {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.main-heading {
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border-bottom: 2px solid #ccc;
+}
+
+.main-heading-content {
+    width: 960px;
+    height: 50px;
+    line-height: 50px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    margin: 0 auto;
+}
+
+.name {
+    float: left;
+    color: #fff;
+    background: #4aaaa5;
+    height: 50px;
+    padding: 0 15px;
+    border-bottom: 2px solid #ccc;
+
+}
+
+.name h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav {
+    float: right;
+    height: 50px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    float: left;
+    list-style: none;  
+}
+
+nav a {
+    color: #777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 0 20px;
+    border-right: 1px solid red;
+    border-left: 1px solid red;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+nav a:active {
+    color: #4aaaa5;
+}
+
+nav a:visited {
+    color: #4aaaa5;
+}
+
+nav li:first-child a {
+    padding-left: 0;
+    border: none;
+}
+
+nav li:last-child a {
+    padding-right: 0;
+    border: none;
+}
+
+.content::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 50px;
+ }
+
+article {
+    float: left;
+    width: 650px;
+    background: white;
+    margin: 20px 0;
+    padding: 25px 20px;
+    border: 1px solid #ccc;
+}
+
+.article-heading {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+article img {
+    margin-right: 15px;
+    vertical-align: top;
+}
+
+article p {
+    line-height: 1.5;
+    vertical-align: top;
+}
+
+.profile-pic {
+    float: left;
+}
+
+aside {
+    float: right;
+    width: 270px;
+    background: white;
+    margin: 20px 0;
+    padding: 25px 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+ 
+.sidebar-heading {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    background: gray;
+    float: left;
+    margin-right: 24px;
+}
+
+.icon:last-child {
+    margin-right: 0;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+button[type="submit"] {
+    color: white;
+    background: #4aaaa5;
+    border: none;
+    padding: 6px 20px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 20px;
+}
+
+.game {
+    width: 280px;
+    height: 200px;
+    background: gray;
+    position: relative
+}
+
+.game img {
+    width: 100%;
+    height: 100%;
+}
+
+.game:first-child {
+    float: left;
+}
+
+.game:nth-child(2) {
+    float: right;
+}
+
+.description {
+    width: 100%;
+    background: #4aaaa5;
+    color: lightgray;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
+    padding: 15px 0;
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background: gray;
+    color: lightgray;
+    font-size: 12px;
+    line-height: 65px;
+    text-align: center;
+    border-top: 5px solid #4aaaa5;
+    position: absolute;
+    bottom: 0;
+}
+
